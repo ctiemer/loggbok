@@ -1,5 +1,14 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    div#maincontent
+      #addlog
+        form(method = 'POST')
+          p
+          textarea(name='content', rows="10")
+          br
+          input(type="submit", id='submit', value = 'submit')
+      script(src='/javascripts/index.js')
+
+
+
